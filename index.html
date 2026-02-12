@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home || Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="head-cls">
+            <a href="index.html">
+                <img src="./assets/stackly-logo.webp" alt="LOGO" class="logo" loading="lazy">
+            </a>
+            <div class="menu-items" id="navMenu">
+                <a href="index.html" class="nav-active">Home</a>
+                <a href="404page.html">About</a>
+                <a href="404page.html">Service</a>
+                <a href="404page.html">Blog</a>
+                <a href="404page.html">Contact</a>
+                <div class="close-btn material-icons" id="closeMenu">close</div>
+            </div>
+            <a href="tel: +91 9876543210" class="head-cta">
+                <div class="head-call">
+                    <span class="material-icons">call</span>
+                    <p>0987654321</p>
+                </div>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content-container">
+                <h1 data-aos="fade">Guiding You <span class="italic-txt">Home</span> with <span class="italic-txt">Confidence</span>.
+                </h1>
+                <div class="hero-stats">
+                    <div class="stat-item" data-aos="fade-up-right">
+                        <span class="material-icons stat-icon">verified</span>
+                        <div class="stat-text">
+                            <strong>15+</strong>
+                            <span>Years Active</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+                    <div class="stat-item" data-aos="fade-up-right">
+                        <span class="material-icons stat-icon">apartment</span>
+                        <div class="stat-text">
+                            <strong>2k+</strong>
+                            <span>Properties Sold</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="stat-item" data-aos="fade-up-left">
+                        <span class="material-icons stat-icon">sentiment_satisfied_alt</span>
+                        <div class="stat-text">
+                            <strong>98%</strong>
+                            <span>Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="404page.html" class="btn-primary">
+                    Browse Properties <span class="material-icons">arrow_outward</span>
+                </a>
+                <div class="hero-trust-section">
+                    <div class="hero-user-avatars">
+                        <img src="./assets/review1.webp" alt="User 1">
+                        <img src="./assets/review3.webp" alt="User 2">
+                        <img src="./assets/review2.webp" alt="User 3">
+                        <img src="./assets/review4.webp" alt="User 4">
+                        <!-- <div class="more-users">+2.5k</div> -->
+                    </div>
+
+                    <div class="hero-trust-text">
+                        <h3>10+</h3>
+                        <p>Featured Agents</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-img-container">
+                <div class="hero-overlay"></div>
+
+                <img src="./assets/hero1.webp" alt="Real Estate 1" class="hero-img active">
+                <img src="./assets/hero2.webp" alt="Real Estate 2" class="hero-img">
+                <img src="./assets/hero3.webp" alt="Real Estate 3" class="hero-img">
+                <img src="./assets/hero4.webp" alt="Real Estate 4" class="hero-img">
+            </div>
+
+        </div>
+    </section>
+    <div class="search-section-wrapper" data-aos="fade-down">
+        <div class="search-container">
+
+            <!-- <div class="search-tabs">
+                <button class="tab-btn active">Buy</button>
+                <button class="tab-btn">Rent</button>
+                <button class="tab-btn">Sell</button>
+            </div> -->
+
+            <form class="search-form">
+
+                <div class="input-group">
+                    <span class="material-icons input-icon">location_on</span>
+                    <div class="input-content">
+                        <label>Location</label>
+                        <input type="text" placeholder="City, Zip, or Neighborhood">
+                    </div>
+                </div>
+
+                <div class="divider-vertical"></div>
+
+                <div class="input-group">
+                    <span class="material-icons input-icon">home</span>
+                    <div class="input-content">
+                        <label>Property Type</label>
+                        <select>
+                            <option>All Types</option>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                            <option>Penthouse</option>
+                            <option>Office</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="divider-vertical"></div>
+
+                <div class="input-group">
+                    <span class="material-icons input-icon">attach_money</span>
+                    <div class="input-content">
+                        <label>Price Range</label>
+                        <select>
+                            <option>$100k - $500k</option>
+                            <option>$500k - $1M</option>
+                            <option>$1M - $5M</option>
+                            <option>$5M+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <a href="404page.html" type="submit" class="btn-search">
+                    <span class="material-icons">search</span>
+                    Search
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <section class="categories-section">
+
+        <div class="section-header">
+            <span class="subtitle">Curated Portfolio</span>
+            <h2>Explore by <span class="highlight">Category</span></h2>
+        </div>
+
+        <div class="category-grid">
+
+            <a href="404page.html" class="cat-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="cat-img" style="background-image: url('./assets/cat3.webp');">
+                </div>
+                <div class="cat-overlay"></div>
+                <div class="cat-content">
+                    <span class="material-icons cat-icon">king_bed</span>
+                    <h3>Residential</h3>
+                    <p>240+ Listings</p>
+                    <span class="arrow-btn material-icons">arrow_forward</span>
+                </div>
+            </a>
+
+            <a href="404page.html" class="cat-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="cat-img" style="background-image: url('./assets/cat1.webp');">
+                </div>
+                <div class="cat-overlay"></div>
+                <div class="cat-content">
+                    <span class="material-icons cat-icon">storefront</span>
+                    <h3>Commercial</h3>
+                    <p>85+ Listings</p>
+                    <span class="arrow-btn material-icons">arrow_forward</span>
+                </div>
+            </a>
+
+            <a href="404page.html" class="cat-card highlight-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="cat-img" style="background-image: url('./assets/cat2.webp');">
+                </div>
+                <div class="cat-overlay"></div>
+                <div class="cat-content">
+                    <span class="material-icons cat-icon">diamond</span>
+                    <h3>Luxury Collection</h3>
+                    <p>Exclusive Estates</p>
+                    <span class="arrow-btn material-icons">arrow_forward</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+    <section class="properties">
+        <div class="section-header">
+            <span class="subtitle">Featured Listing</span>
+            <h2>Choose Your <span class="highlight">Properties</span></h2>
+        </div>
+        <div class="properties-container">
+            <div class="properties-rent" style="--i:0">
+                <div class="properties-head">Properties For <span class="italic-txt">Rent</span> </div>
+                <div class="properties-grid">
+                    <div class="properties-card">
+                        <div class="properties-img-container">
+                            <img src="./assets/properties1.webp" alt="Properties Rent" loading="lazy">
+                            <div class="properties-img-overlay">For Rent</div>
+                        </div>
+                        <div class="properties-card-content">
+                            <div class="property-loc"><span class="material-icons">location_on</span> Salem </div>
+                            <h3 class="property-name">Escot</h3>
+                            <div class="property-features">
+                                <h4><span class="material-icons">bed</span>5</h4>
+                                <h4><span class="material-icons">bathtub</span>3</h4>
+                                <h4><span class="material-icons">square_foot</span>2000 Sqft</h4>
+                            </div>
+                            <div class="property-cta">
+                                <div class="property-price">$20,000</div>
+                                <a href="404page.html" class="btn-primary">View Details <span
+                                        class="material-icons">arrow_outward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties-card">
+                        <div class="properties-img-container">
+                            <img src="./assets/properties2.webp" alt="Properties Rent" loading="lazy">
+                            <div class="properties-img-overlay">For Rent</div>
+                        </div>
+                        <div class="properties-card-content">
+                            <div class="property-loc"><span class="material-icons">location_on</span> Salem </div>
+                            <h3 class="property-name">Escot</h3>
+                            <div class="property-features">
+                                <h4><span class="material-icons">bed</span>5</h4>
+                                <h4><span class="material-icons">bathtub</span>3</h4>
+                                <h4><span class="material-icons">square_foot</span>2000 Sqft</h4>
+                            </div>
+                            <div class="property-cta">
+                                <div class="property-price">$20,000</div>
+                                <a href="404page.html" class="btn-primary">View Details <span
+                                        class="material-icons">arrow_outward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties-card">
+                        <div class="properties-img-container">
+                            <img src="./assets/properties3.webp" alt="Properties Rent" loading="lazy">
+                            <div class="properties-img-overlay">For Rent</div>
+                        </div>
+                        <div class="properties-card-content">
+                            <div class="property-loc"><span class="material-icons">location_on</span> Salem </div>
+                            <h3 class="property-name">Escot</h3>
+                            <div class="property-features">
+                                <h4><span class="material-icons">bed</span>5</h4>
+                                <h4><span class="material-icons">bathtub</span>3</h4>
+                                <h4><span class="material-icons">square_foot</span>2000 Sqft</h4>
+                            </div>
+                            <div class="property-cta">
+                                <div class="property-price">$20,000</div>
+                                <a href="404page.html" class="btn-primary">View Details <span
+                                        class="material-icons">arrow_outward</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="properties-investment" style="--i:0.5">
+                <div class="properties-head">Properties For <span class="italic-txt">Investment</span> </div>
+                <div class="properties-grid">
+                    <div class="properties-card">
+                        <div class="properties-img-container">
+                            <img src="./assets/properties4.webp" alt="Properties Rent" loading="lazy">
+                            <div class="properties-img-overlay">For Investment</div>
+                        </div>
+                        <div class="properties-card-content">
+                            <div class="property-loc"><span class="material-icons">location_on</span> Salem </div>
+                            <h3 class="property-name">Escot</h3>
+                            <div class="property-features">
+                                <h4><span class="material-icons">bed</span>5</h4>
+                                <h4><span class="material-icons">bathtub</span>3</h4>
+                                <h4><span class="material-icons">square_foot</span>2000 Sqft</h4>
+                            </div>
+                            <div class="property-cta">
+                                <div class="property-price">$20,000</div>
+                                <a href="404page.html" class="btn-primary">View Details <span
+                                        class="material-icons">arrow_outward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties-card">
+                        <div class="properties-img-container">
+                            <img src="./assets/properties5.webp" alt="Properties Rent" loading="lazy">
+                            <div class="properties-img-overlay">For Investment</div>
+                        </div>
+                        <div class="properties-card-content">
+                            <div class="property-loc"><span class="material-icons">location_on</span> Salem </div>
+                            <h3 class="property-name">Escot</h3>
+                            <div class="property-features">
+                                <h4><span class="material-icons">bed</span>5</h4>
+                                <h4><span class="material-icons">bathtub</span>3</h4>
+                                <h4><span class="material-icons">square_foot</span>2000 Sqft</h4>
+                            </div>
+                            <div class="property-cta">
+                                <div class="property-price">$20,000</div>
+                                <a href="404page.html" class="btn-primary">View Details <span
+                                        class="material-icons">arrow_outward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties-card">
+                        <div class="properties-img-container">
+                            <img src="./assets/properties6.webp" alt="Properties Rent" loading="lazy">
+                            <div class="properties-img-overlay">For Investment</div>
+                        </div>
+                        <div class="properties-card-content">
+                            <div class="property-loc"><span class="material-icons">location_on</span> Salem </div>
+                            <h3 class="property-name">Escot</h3>
+                            <div class="property-features">
+                                <h4><span class="material-icons">bed</span>5</h4>
+                                <h4><span class="material-icons">bathtub</span>3</h4>
+                                <h4><span class="material-icons">square_foot</span>2000 Sqft</h4>
+                            </div>
+                            <div class="property-cta">
+                                <div class="property-price">$20,000</div>
+                                <a href="404page.html" class="btn-primary">View Details <span
+                                        class="material-icons">arrow_outward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="properties-sell" style="--i:2">
+                <div class="properties-head">Properties For <span class="italic-txt">Sell</span> </div>
+                <div class="properties-grid">
+                    <div class="properties-card">
+                        <div class="properties-img-container">
+                            <img src="./assets/properties7.webp" alt="Properties Rent" loading="lazy">
+                            <div class="properties-img-overlay">For Sell</div>
+                        </div>
+                        <div class="properties-card-content">
+                            <div class="property-loc"><span class="material-icons">location_on</span> Salem </div>
+                            <h3 class="property-name">Escot</h3>
+                            <div class="property-features">
+                                <h4><span class="material-icons">bed</span>5</h4>
+                                <h4><span class="material-icons">bathtub</span>3</h4>
+                                <h4><span class="material-icons">square_foot</span>2000 Sqft</h4>
+                            </div>
+                            <div class="property-cta">
+                                <div class="property-price">$20,000</div>
+                                <a href="404page.html" class="btn-primary">View Details <span
+                                        class="material-icons">arrow_outward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties-card">
+                        <div class="properties-img-container">
+                            <img src="./assets/properties8.webp" alt="Properties Rent" loading="lazy">
+                            <div class="properties-img-overlay">For Sell</div>
+                        </div>
+                        <div class="properties-card-content">
+                            <div class="property-loc"><span class="material-icons">location_on</span> Salem </div>
+                            <h3 class="property-name">Escot</h3>
+                            <div class="property-features">
+                                <h4><span class="material-icons">bed</span>5</h4>
+                                <h4><span class="material-icons">bathtub</span>3</h4>
+                                <h4><span class="material-icons">square_foot</span>2000 Sqft</h4>
+                            </div>
+                            <div class="property-cta">
+                                <div class="property-price">$20,000</div>
+                                <a href="404page.html" class="btn-primary">View Details <span
+                                        class="material-icons">arrow_outward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties-card">
+                        <div class="properties-img-container">
+                            <img src="./assets/properties9.webp" alt="Properties Rent" loading="lazy">
+                            <div class="properties-img-overlay">For Sell</div>
+                        </div>
+                        <div class="properties-card-content">
+                            <div class="property-loc"><span class="material-icons">location_on</span> Salem </div>
+                            <h3 class="property-name">Escot</h3>
+                            <div class="property-features">
+                                <h4><span class="material-icons">bed</span>5</h4>
+                                <h4><span class="material-icons">bathtub</span>3</h4>
+                                <h4><span class="material-icons">square_foot</span>2000 Sqft</h4>
+                            </div>
+                            <div class="property-cta">
+                                <div class="property-price">$20,000</div>
+                                <a href="404page.html" class="btn-primary">View Details <span
+                                        class="material-icons">arrow_outward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-us-section">
+        <div class="why-us-container">
+
+            <div class="why-content" data-aos="fade-up">
+                <span class="section-subtitle">The VistaHaven Difference</span>
+                <h2>Not Just a Brokerage.<br>A <span class="highlight-text">Partnership.</span></h2>
+                <p class="why-description">
+                    We believe real estate is more than transactions; it’s about building a future.
+                    With over a decade of market leadership, we curate homes that align with your
+                    lifestyle and financial goals.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">$2B</span>
+                        <span class="stat-label">Volume Sold</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">4k+</span>
+                        <span class="stat-label">Happy Families</span>
+                    </div>
+                </div>
+
+                <a href="404page.html" class="btn-primary">
+                    Meet Our Team <span class="material-icons">arrow_outward</span>
+                </a>
+            </div>
+
+            <div class="why-visual" data-aos="fade-down">
+                <div class="image-wrapper-scoop">
+                    <img src="./assets/why-choose.webp" alt="Modern Architecture">
+                </div>
+
+                <div class="trust-card">
+                    <div class="trust-header">
+                        <span class="material-icons star-icon">star</span>
+                        <span class="rating-score">4.9/5</span>
+                    </div>
+                    <p>Rated "Excellent" by over 500+ verified clients on TrustPilot.</p>
+                    <div class="client-avatars">
+                        <img src="./assets/team1.webp" alt="Client">
+                        <img src="./assets/team5.webp" alt="Client">
+                        <img src="./assets/team4.webp" alt="Client">
+                        <span class="more-clients">+400</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="img-gallery">
+        <div class="section-header">
+            <span class="subtitle">Communities</span>
+            <h2>Explore the<span class="highlight">neighborhood</span></h2>
+        </div>
+        <div class="img-gallery-container">
+            <div class="img-gallery-grid" data-aos="fade-up">
+                <div class="gallery-nor">
+                    <div class="img-gallery-img">
+                        <img src="./assets/properties10.webp" alt="Image" loading="lazy">
+                        <div class="gallery-overlay">Beach</div>
+                    </div>
+                </div>
+                <div class="img-gallery-inner-grid">
+                    <div>
+                        <div class="img-gallery-img">
+                            <img src="./assets/neighborhood1.webp" alt="Image" loading="lazy">
+                            <div class="gallery-overlay">Beach</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-gallery-img">
+                            <img src="./assets/neighborhood2.webp" alt="Image" loading="lazy">
+                            <div class="gallery-overlay">Beach</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-gallery-grid reverse" data-aos="fade-down">
+                <div class="gallery-nor">
+                    <div class="img-gallery-img">
+                        <img src="./assets/neighborhood3.webp" alt="Image" loading="lazy">
+                        <div class="gallery-overlay">Beach</div>
+                    </div>
+                </div>
+                <div class="img-gallery-inner-grid">
+                    <div>
+                        <div class="img-gallery-img">
+                            <img src="./assets/neighborhood4.webp" alt="Image" loading="lazy">
+                            <div class="gallery-overlay">Beach</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-gallery-img">
+                            <img src="./assets/neighborhood5.webp" alt="Image" loading="lazy">
+                            <div class="gallery-overlay">Beach</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-gallery-grid" data-aos="fade">
+                <div class="gallery-nor">
+                    <div class="img-gallery-img">
+                        <img src="./assets/neighborhood6.webp" alt="Image" loading="lazy">
+                        <div class="gallery-overlay">Beach</div>
+                    </div>
+                </div>
+                <div class="img-gallery-inner-grid">
+                    <div>
+                        <div class="img-gallery-img">
+                            <img src="./assets/properties2.webp" alt="Image" loading="lazy">
+                            <div class="gallery-overlay">Beach</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-gallery-img">
+                            <img src="./assets/properties7.webp" alt="Image" loading="lazy">
+                            <div class="gallery-overlay">Beach</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="section-header">
+            <span class="subtitle">Our Services</span>
+            <h2><span class="highlight">Professional</span> Services designed for your property goals </h2>
+        </div>
+        <div class="serivces-container">
+            <div class="services-card" data-aos="fade-up-right" data-aos-delay="100">
+                <img src="./assets/services1.webp" alt="Services Icon" loading="lazy" class="services-icon">
+                <div class="services-head">Property Buying Assistance</div>
+                <div class="services-desc">Helping clients find the right property based on budget, location,</div>
+            </div>
+            <div class="services-card" data-aos="fade-up-right" data-aos-delay="200">
+                <img src="./assets/services2.webp" alt="Services Icon" loading="lazy" class="services-icon">
+                <div class="services-head">Property Buying Assistance</div>
+                <div class="services-desc">Helping clients find the right property based on budget, location,</div>
+            </div>
+            <div class="services-card" data-aos="fade-up-left" data-aos-delay="300">
+                <img src="./assets/services3.webp" alt="Services Icon" loading="lazy" class="services-icon">
+                <div class="services-head">Property Buying Assistance</div>
+                <div class="services-desc">Helping clients find the right property based on budget, location,</div>
+            </div>
+            <div class="services-card" data-aos="fade-up-left" data-aos-delay="400">
+                <img src="./assets/services4.webp" alt="Services Icon" loading="lazy" class="services-icon">
+                <div class="services-head">Property Buying Assistance</div>
+                <div class="services-desc">Helping clients find the right property based on budget, location,</div>
+            </div>
+        </div>
+    </section>
+    <section class="team" data-aos="zoom-in">
+        <div class="section-header">
+            <span class="subtitle">Our Team</span>
+            <h2> <span class="highlight">The People </span>Who make our real estate work</h2>
+        </div>
+        <div class="team-container">
+            <div class="team-img t1">
+                <div class="team-img-container">
+                    <img src="./assets/team1.webp" alt="Team1" loading="lazy">
+                    <div class="team-overlay">
+                        <h3>Akshaya</h3>
+                        <p>Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-img t2">
+                <div class="team-img-container">
+                    <img src="./assets/team2.webp" alt="Team1" loading="lazy">
+                    <div class="team-overlay">
+                        <h3>Akshaya</h3>
+                        <p>Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-img t3">
+                <div class="team-img-container">
+                    <img src="./assets/team3.webp" alt="Team1" loading="lazy">
+                    <div class="team-overlay">
+                        <h3>Akshaya</h3>
+                        <p>Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-img t4">
+                <div class="team-img-container">
+                    <img src="./assets/team4.webp" alt="Team1" loading="lazy">
+                    <div class="team-overlay">
+                        <h3>Akshaya</h3>
+                        <p>Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+
+        <div class="section-header center-header">
+            <span class="subtitle">Client Stories</span>
+            <h2>Trusted by <span class="highlight">Thousands</span></h2>
+        </div>
+
+        <div class="marquee-wrapper">
+
+            <div class="marquee-track">
+
+                <div class="review-card">
+                    <span class="material-icons quote-icon">format_quote</span>
+                    <div class="stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span>
+                    </div>
+                    <p class="review-text">"VistaHaven found us our dream villa in under two weeks. The attention to
+                        detail and market knowledge was unmatched."</p>
+                    <div class="reviewer">
+                        <img src="./assets/review2.webp">
+                        <div class="reviewer-info">
+                            <h4>Sarah Jenkins</h4>
+                            <span>Bought in Beverly Hills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <span class="material-icons quote-icon">format_quote</span>
+                    <div class="stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star_half</span>
+                    </div>
+                    <p class="review-text">"Sold my penthouse for 20% over asking price. The marketing team is
+                        absolutely world-class."</p>
+                    <div class="reviewer">
+                        <img src="./assets/review4.webp" alt="Client">
+                        <div class="reviewer-info">
+                            <h4>Michael Ross</h4>
+                            <span>Sold in Manhattan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <span class="material-icons quote-icon">format_quote</span>
+                    <div class="stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span>
+                    </div>
+                    <p class="review-text">"Professional, transparent, and incredibly patient. They made the complex
+                        process of buying land simple."</p>
+                    <div class="reviewer">
+                        <img src="./assets/review5.webp" alt="Client">
+                        <div class="reviewer-info">
+                            <h4>Elena Rodriguez</h4>
+                            <span>Investor, Miami</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <span class="material-icons quote-icon">format_quote</span>
+                    <div class="stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span>
+                    </div>
+                    <p class="review-text">"The best agency I have worked with in 15 years of property development.
+                        Highly recommended."</p>
+                    <div class="reviewer">
+                        <img src="./assets/review3.webp" alt="Client">
+                        <div class="reviewer-info">
+                            <h4>David Chen</h4>
+                            <span>Developer, Seattle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <span class="material-icons quote-icon">format_quote</span>
+                    <div class="stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span>
+                    </div>
+                    <p class="review-text">"VistaHaven found us our dream villa in under two weeks. The attention to
+                        detail and market knowledge was unmatched."</p>
+                    <div class="reviewer">
+                        <img src="./assets/team5.webp" alt="Client">
+                        <div class="reviewer-info">
+                            <h4>Sarah Jenkins</h4>
+                            <span>Bought in Beverly Hills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <span class="material-icons quote-icon">format_quote</span>
+                    <div class="stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star</span><span class="material-icons">star</span><span
+                            class="material-icons">star_half</span>
+                    </div>
+                    <p class="review-text">"Sold my penthouse for 20% over asking price. The marketing team is
+                        absolutely world-class."</p>
+                    <div class="reviewer">
+                        <img src="./assets/team6.webp" alt="Client">
+                        <div class="reviewer-info">
+                            <h4>Michael Ross</h4>
+                            <span>Sold in Manhattan</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="blog-section" data-aos="fade-up">
+        <div class="section-header center-header">
+            <span class="subtitle">Latest Insights</span>
+            <h2>Market <span class="highlight">News</span></h2>
+        </div>
+
+        <div class="blog-accordion">
+
+            <article class="blog-card" style="background-image: url('./assets/why-choose.webp');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <span class="date">Oct 12, 2025</span>
+                    <h3>Buying vs. Renting</h3>
+                    <p class="excerpt">Is it better to build equity or maintain flexibility? We break down the math for
+                        the 2025 market.</p>
+                    <a href="404page.html" class="read-btn">Read Article</a>
+                </div>
+            </article>
+
+            <article class="blog-card" style="background-image: url('./assets/blog2.webp');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <span class="date">Nov 05, 2025</span>
+                    <h3>Interior Trends</h3>
+                    <p class="excerpt">Minimalism is out. Discover the warm, textured luxury styles taking over high-end
+                        homes.</p>
+                    <a href="404page.html" class="read-btn">Read Article</a>
+                </div>
+            </article>
+
+            <article class="blog-card" style="background-image: url('./assets/blog3.webp');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <span class="date">Dec 01, 2025</span>
+                    <h3>Investment Guide</h3>
+                    <p class="excerpt">Where to put your money next year. Top 5 emerging neighborhoods with highest ROI
+                        potential.</p>
+                    <a href="404page.html" class="read-btn">Read Article</a>
+                </div>
+            </article>
+            <article class="blog-card" style="background-image: url('./assets/blog4.webp');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <span class="date">Jan 15, 2026</span>
+                    <h3>Future of Living</h3>
+                    <p class="excerpt">Smart home ecosystems are no longer optional. See how automation is driving up
+                        luxury property values.</p>
+                    <a href="#" class="read-btn">Read Article</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="contact-section">
+
+        <div class="contact-bg-image"></div>
+        <div class="contact-bg-overlay"></div>
+
+        <div class="contact-container">
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info" data-aos="fade-down">
+                    <div class="info-header">
+                        <span class="subtitle-gold">Get in Touch</span>
+                        <h2>Let's Discuss Your <br>Dream Home</h2>
+                        <p>Whether you're selling, buying, or just looking for advice, our team is here to guide you.
+                        </p>
+                    </div>
+
+                    <div class="info-details">
+                        <div class="info-item">
+                            <span class="material-icons icon-gold">location_on</span>
+                            <div>
+                                <h4>Headquarters</h4>
+                                <p>Salem<br>Tamil Nadu</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="material-icons icon-gold">phone_iphone</span>
+                            <div>
+                                <h4>Direct Line</h4>
+                                <p>+91 9876543210</p>
+                                <p class="sub-text">Mon - Fri, 8am - 6pm</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="material-icons icon-gold">mail_outline</span>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@thestackly.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="404page.html" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="404page.html" class="social-btn"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="404page.html" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="circle-decor"></div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate data-aos="fade-up">
+                    <h3>Send a Message</h3>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>First Name</label>
+                            <input type="text" id="firstName" placeholder="Jackson">
+                            <span class="error-msg">First Name is required</span>
+                        </div>
+                        <div class="input-group">
+                            <label>Last Name</label>
+                            <input type="text" id="lastName" placeholder="Durai">
+                            <span class="error-msg">Last Name is required</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="mail@example.com">
+                        <span class="error-msg">Please enter a valid email address</span>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone (Optional)</label>
+                        <input type="tel" id="phone" placeholder="+91 2345678901">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea id="message" rows="4" placeholder="I am interested in..."></textarea>
+                        <span class="error-msg">Message cannot be empty</span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Send Request <span class="material-icons">arrow_forward</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                <div class="footer-logo">
+                    <img src="./assets/stackly-logo.webp" alt="LOGO" class="logo">
+                </div>
+                <p class="footer-desc">
+                    Elevating the real estate experience with premium properties and personalized service since 2010.
+                </p>
+                <div class="social-links-footer">
+                    <a href="404page.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="404page.html"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="404page.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="404page.html"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="404page.html">About Us</a></li>
+                    <li><a href="404page.html">Our Team</a></li>
+                    <li><a href="404page.html">Careers</a></li>
+                    <li><a href="404page.html">Latest News</a></li>
+                    <li><a href="404page.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                <h4>Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="404page.html">Buy a Home</a></li>
+                    <li><a href="404page.html">Rent a Home</a></li>
+                    <li><a href="404page.html">Sell Your Property</a></li>
+                    <li><a href="404page.html">Commercial</a></li>
+                    <li><a href="404page.html">Neighborhood Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                <h4>Stay Updated</h4>
+                <p class="newsletter-text">Market insights delivered to your inbox weekly.</p>
+                <form class="footer-form" id="newsletterForm" novalidate>
+                    <div class="newsletter-wrapper">
+                        <input type="email" id="newsletterEmail" placeholder="Your email address">
+                        <button type="submit"><span class="material-icons">arrow_forward</span></button>
+                    </div>
+                    <span class="error-msg footer-error">Invalid email address</span>
+                </form>
+                <div class="contact-mini">
+                    <span class="material-icons">phone</span> +91 9876543210
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 All rights reserved.</p>
+            <div class="legal-links">
+                <a href="404page.html">Privacy Policy</a>
+                <a href="404page.html">Terms of Service</a>
+                <a href="404page.html">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            easing: 'ease-out',
+            once: true,
+            offset: 50,
+            // disable: 'mobile'
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll('.hero-img');
+            let currentIndex = 0;
+            const intervalTime = 4000;
+
+            setInterval(() => {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }, intervalTime);
+        });
+
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("navMenu");
+        const closeMenu = document.getElementById("closeMenu");
+
+        function openMenu() {
+            navMenu.classList.add("active");
+            closeMenu.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeNav() {
+            navMenu.classList.remove("active");
+            closeMenu.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+
+        hamburger.addEventListener("click", openMenu);
+        closeMenu.addEventListener("click", closeNav);
+
+        document.querySelectorAll(".nav-items a").forEach(link => {
+            link.addEventListener("click", closeNav);
+        });
+    </script>
+    <script>
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function setError(element, isError) {
+            const inputGroup = element.parentElement;
+            if (isError) {
+                inputGroup.classList.add('error');
+            } else {
+                inputGroup.classList.remove('error');
+            }
+        }
+
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            let isValid = true;
+
+            const firstName = document.getElementById('firstName');
+            const lastName = document.getElementById('lastName');
+            const email = document.getElementById('email');
+            const message = document.getElementById('message');
+
+            if (firstName.value.trim() === '') {
+                setError(firstName, true);
+                isValid = false;
+            } else {
+                setError(firstName, false);
+            }
+
+            if (lastName.value.trim() === '') {
+                setError(lastName, true);
+                isValid = false;
+            } else {
+                setError(lastName, false);
+            }
+
+            if (!isValidEmail(email.value.trim())) {
+                setError(email, true);
+                isValid = false;
+            } else {
+                setError(email, false);
+            }
+
+            if (message.value.trim() === '') {
+                setError(message, true);
+                isValid = false;
+            } else {
+                setError(message, false);
+            }
+
+            if (isValid) {
+                const btn = contactForm.querySelector('.btn-submit');
+                btn.innerHTML = 'Sending...';
+
+                setTimeout(() => {
+                    window.location.href = '404page.html';
+                }, 1000);
+            }
+        });
+
+        const newsletterForm = document.getElementById('newsletterForm');
+
+        newsletterForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const emailInput = document.getElementById('newsletterEmail');
+
+            if (!isValidEmail(emailInput.value.trim())) {
+                newsletterForm.classList.add('error');
+            } else {
+                newsletterForm.classList.remove('error');
+                window.location.href = '404page.html';
+                emailInput.value = "";
+            }
+        });
+    </script>
+</body>
+
+</html>

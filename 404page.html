@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --clr-accent-main: #c5a059;
+            --clr-accent-hover: #b08d4b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: #2520155b;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--clr-accent-hover) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #02020a;
+            border-left: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3b2a7a;
+            border-radius: 6px;
+            border: 3px solid #02020a;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #5b32d6;
+        }
+
+        html {
+            scrollbar-color: #3b2a7a #02020a;
+            scrollbar-width: thin;
+        }
+
+        h1 {
+            font-size: 10rem;
+            line-height: 1;
+            font-weight: 900;
+            background: linear-gradient(135deg, #fff 30%, var(--clr-accent-main) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #888;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        .btn-home {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #5b32d6;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(91, 50, 214, 0.3);
+        }
+
+        .btn-home:hover {
+            background-color: #4a26b5;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(91, 50, 214, 0.5);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 6rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>404</h1>
+
+    <h2>Page Not Found</h2>
+    <p>Oops! The page you are looking for does not exist.</p>
+
+    <br><br>
+    <a href="index.html" class="btn-home">Back to Home</a>
+
+</body>
+
+</html>
