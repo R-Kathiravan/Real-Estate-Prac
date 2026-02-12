@@ -632,6 +632,44 @@ header,
     background-color: var(--clr-accent-main);
 }
 
+.input-group.error .input-icon {
+    color: #ff4d4d;
+}
+
+.input-group.error label {
+    color: #ff4d4d;
+}
+
+.input-group.error input {
+    border-bottom: 2px solid #ff4d4d;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shake-animation {
+    animation: shake 0.3s ease-in-out;
+}
+
 .categories-section {
     padding: 100px 5% 80px 5%;
     background-color: #f9f9f9;
@@ -1925,7 +1963,7 @@ header,
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.3fr;
     gap: 40px;
     margin-bottom: 60px;
 }

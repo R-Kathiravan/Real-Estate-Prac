@@ -44,7 +44,8 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content-container">
-                <h1 data-aos="fade">Guiding You <span class="italic-txt">Home</span> with <span class="italic-txt">Confidence</span>.
+                <h1 data-aos="fade">Guiding You <span class="italic-txt">Home</span> with <span
+                        class="italic-txt">Confidence</span>.
                 </h1>
                 <div class="hero-stats">
                     <div class="stat-item" data-aos="fade-up-right">
@@ -113,13 +114,13 @@
                 <button class="tab-btn">Sell</button>
             </div> -->
 
-            <form class="search-form">
+            <form class="search-form" id="heroSearchForm" novalidate>
 
-                <div class="input-group">
+                <div class="input-group" id="locationGroup">
                     <span class="material-icons input-icon">location_on</span>
                     <div class="input-content">
                         <label>Location</label>
-                        <input type="text" placeholder="City, Zip, or Neighborhood">
+                        <input type="text" id="searchLocation" placeholder="City, Zip, or Neighborhood">
                     </div>
                 </div>
 
@@ -129,12 +130,12 @@
                     <span class="material-icons input-icon">home</span>
                     <div class="input-content">
                         <label>Property Type</label>
-                        <select>
-                            <option>All Types</option>
-                            <option>Apartment</option>
-                            <option>Villa</option>
-                            <option>Penthouse</option>
-                            <option>Office</option>
+                        <select id="searchType">
+                            <option value="all">All Types</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="penthouse">Penthouse</option>
+                            <option value="office">Office</option>
                         </select>
                     </div>
                 </div>
@@ -145,7 +146,8 @@
                     <span class="material-icons input-icon">attach_money</span>
                     <div class="input-content">
                         <label>Price Range</label>
-                        <select>
+                        <select id="searchPrice">
+                            <option value="any">Any Price</option>
                             <option>$100k - $500k</option>
                             <option>$500k - $1M</option>
                             <option>$1M - $5M</option>
@@ -154,10 +156,10 @@
                     </div>
                 </div>
 
-                <a href="404page.html" type="submit" class="btn-search">
+                <button type="submit" class="btn-search">
                     <span class="material-icons">search</span>
                     Search
-                </a>
+                </button>
             </form>
         </div>
     </div>
@@ -899,6 +901,16 @@
             </div>
 
             <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="404page.html">About</a></li>
+                    <li><a href="404page.html">Service</a></li>
+                    <li><a href="404page.html">Blog</a></li>
+                    <li><a href="404page.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
                 <h4>Company</h4>
                 <ul class="footer-links">
                     <li><a href="404page.html">About Us</a></li>
@@ -1070,6 +1082,37 @@
                 newsletterForm.classList.remove('error');
                 window.location.href = '404page.html';
                 emailInput.value = "";
+            }
+        });
+    </script>
+    <script>
+        const searchForm = document.getElementById('heroSearchForm');
+        const locationInput = document.getElementById('searchLocation');
+        const locationGroup = document.getElementById('locationGroup');
+
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const locationValue = locationInput.value.trim();
+            if (locationValue === "") {
+                locationGroup.classList.add('error');
+                searchForm.classList.add('shake-animation');
+                setTimeout(() => {
+                    searchForm.classList.remove('shake-animation');
+                }, 300);
+
+                locationInput.focus();
+
+            } else {
+                locationGroup.classList.remove('error');
+
+                window.location.href = "404page.html";
+            }
+        });
+
+        locationInput.addEventListener('input', function () {
+            if (locationInput.value.trim() !== "") {
+                locationGroup.classList.remove('error');
             }
         });
     </script>
